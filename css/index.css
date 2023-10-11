@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Outfit"),
+         url("/fonts/Outfit-SemiBold-96ab0b8ca370a784a820c2765775418d.woff2") format("woff2"),
+         url("/fonts/Outfit-SemiBold-3287e05622cb5eb779822ae1e1932d7e.woff") format("woff");
+  }
+
+
+
+body {
+    font-feature-settings: "pnum" on,"lnum" on;
+    background: #fff;
+    color: #171923;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 100%;
+    line-height: 24px;
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header a {
+    padding-left: 60px;
+    max-width: 1440px;
+}
+
+.tab__links {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 60px;
+  }
+  @media (max-width: 768px) {
+    .tab__links {
+      padding-left: 0;
+    }
+  }
+
+.tab {
+    width: 100%;
+    height: 38px;
+    background-color: #ffaa4c;
+  }
+
+.tab__link {
+    padding: 9px 40px;
+    border-radius: 20px 20px 0px 0px;
+}
+@media (max-width: 353px) {
+    .tab__link {
+        padding: 9px 20px;
+    }    
+}
+
+.tab_active {
+    background-color: #181818;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.main {
+    position: relative;
+    overflow: hidden;
+    background-color: #181818;
+}
+
+.tab_active .tab__text {
+    color: #FFFFFF;
+    font-family: Outfit,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+}
