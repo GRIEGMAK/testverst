@@ -36,9 +36,6 @@ body {
 .tab__links {
     max-width: 1440px;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     padding-left: 60px;
   }
@@ -86,3 +83,94 @@ a {
     font-style: normal;
     line-height: normal;
 }
+
+header {
+    width: 100%;
+    height: 71px;
+    background-color: #181818;
+}
+
+.header__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 71px;
+    padding: 0 60px;
+}
+
+.header__container a {
+    display: flex;
+    justify-content: center;
+}
+
+.header__link {
+    width: 51px;
+    height: 51px;
+}
+
+.header__text {
+    color: #FFFFFF;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 17px;
+    text-transform: lowercase;
+}
+
+.header__contacts button {
+    border: 2px solid transparent;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    color: #FFFFFF;
+    background-color: #954CED;
+    transition: scale 0.3s;
+}
+
+.header__contacts button{
+    cursor: pointer;
+}
+
+.header__button {
+    font-family: Outfit,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header__contacts button {
+    
+}
+
+/* .btn-6 {
+    $btn-color: random-color($max:200);
+    $btn-color-dark: shade($btn-color, 40%);
+    color: tint($btn-color);
+    
+    span {
+      @include absolute();
+      display: block;
+      @include size(0);
+      border-radius: 50%;
+      background-color: $btn-color-dark;
+      transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    
+    &:hover {
+      color: tint($btn-color, 75%);
+      
+      span {
+        @include size(225%, $btn-width*2.25);
+      }
+    }
+    
+    &:active {
+      background-color: $btn-color;
+    }
+  } */
