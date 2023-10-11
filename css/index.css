@@ -105,7 +105,7 @@ header {
     justify-content: center;
 }
 
-.header__link {
+.header__link img {
     width: 51px;
     height: 51px;
 }
@@ -116,7 +116,7 @@ header {
     font-style: normal;
     font-weight: 600;
     font-size: 37px;
-    line-height: 17px;
+    line-height: 45px;
     text-transform: lowercase;
 }
 
@@ -144,7 +144,6 @@ header {
 
 .header__logo {
     display: flex;
-    flex-direction: row;
 }
 
 .header__contacts button {
