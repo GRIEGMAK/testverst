@@ -120,21 +120,7 @@ header {
     text-transform: lowercase;
 }
 
-.header__contacts button {
-    border: 2px solid transparent;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 28px;
-    color: #FFFFFF;
-    background-color: #954CED;
-    transition: scale 0.3s;
-}
 
-.header__contacts button{
-    cursor: pointer;
-}
 
 .header__button {
     font-family: Outfit,sans-serif;
@@ -147,34 +133,85 @@ header {
 }
 
 .header__contacts button {
-    
-}
+    border: 2px solid transparent;
+    border-radius: 16px;
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 14px 28px;
+    color: #ffffff;
+    background-color: #954ced;
+    -webkit-transition: scale 0.3s;
+    transition: scale 0.3s;
+    overflow: hidden;
+  }
+  .header__contacts button:before {
+    content: "";
+    width: 100px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #181818;
+    color: #FFFFFF;
+    border-radius: 50%;
+    left: -40px;
+    bottom: -35px;
+    transition: left 0.3s, bottom 0.3s, height 1s, width 1s,
+      scale 0.3s;
+  }
+  .header__contacts button:not(:disabled, :active):hover {
+    transition: scale 0.3s, background-color 1.5s;
+    scale: 1.05;
+    background-color: #181818;
+    color: #ffffff;
+    border-color: #954ced;
+  }
+  .header__contacts button:not(:disabled, :active):hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    scale: 5;
+    transition: left 0.3s, bottom 0.3s, height 0.5s, width 1s;
+  }
+  .header__contacts button:hover .header__button {
+    color: #ffffff;
+    z-index: 15;
+  }
+  
+  .header__contacts button:not(:disabled, :active):focus-visible {
+    border: 4px solid #ba8bf3;
+    padding: 12px 26px;
+  }
+  .header__contacts button:not(:disabled):active {
+    background-color: #7b31d4;
+    scale: 1.05;
+  }
+  .header__contacts button:not(:disabled):active:before {
+    left: 0;
+    bottom: 0;
+    scale: 7;
+    background-color: #7b31d4;
+  }
 
-/* .btn-6 {
-    $btn-color: random-color($max:200);
-    $btn-color-dark: shade($btn-color, 40%);
-    color: tint($btn-color);
-    
-    span {
-      @include absolute();
-      display: block;
-      @include size(0);
-      border-radius: 50%;
-      background-color: $btn-color-dark;
-      transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-    }
-    
-    &:hover {
-      color: tint($btn-color, 75%);
-      
-      span {
-        @include size(225%, $btn-width*2.25);
-      }
-    }
-    
-    &:active {
-      background-color: $btn-color;
-    }
-  } */
+  .header__button span {
+    color: inherit;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
