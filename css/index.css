@@ -255,7 +255,7 @@ header {
     margin-bottom: 40px;
 }
 
-.hero__woman  {
+.hero__image.woman  {
     position: absolute;
     right: 49px;
     bottom: 0;
@@ -263,3 +263,13 @@ header {
     height: 753px;
     z-index: 2;
 }
+
+.hero__image.figure {
+    position: absolute;
+    z-index: 0;
+    left: 54.1%;
+    bottom: -34px;
+    width: 2000px;
+    height: 760px;
+}
+
