@@ -142,6 +142,11 @@ header {
     font-weight: 600;
 }
 
+.header__logo {
+    display: flex;
+    flex-direction: row;
+}
+
 .header__contacts button {
     
 }
