@@ -123,7 +123,7 @@ header {
 
 
 .header__button {
-    font-family: Outfit,sans-serif;
+    font-family: 'Outfit';
     font-size: 20px;
     font-weight: 600;
 }
@@ -215,3 +215,51 @@ header {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
+  .hero {
+    position: relative;
+    padding: 130px 0 0 110px;
+    background-color: #181818;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 821px;
+}
+
+.hero__textfield {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 671px;
+    z-index: 10;
+}
+
+.hero__h1 {
+    color: #FFFFFF;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 106%;
+    font-feature-settings: 'liga' off;
+    margin-bottom: 20px;
+}
+
+.hero__h2 {
+    max-width: 534px;
+    color: #FFFFFF;
+    font-family: 'Outfit';
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.hero__woman  {
+    position: absolute;
+    right: 49px;
+    bottom: 0;
+    width: 606px;
+    height: 753px;
+    z-index: 2;
+}
