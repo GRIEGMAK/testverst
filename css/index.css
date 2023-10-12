@@ -468,3 +468,187 @@ header {
     opacity: 1;
     width: 100%;
 }
+
+.howworks {
+    position: relative;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.howworks__move {
+    display: flex;
+    padding: 46px 0;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+.howworks__item {
+    width: 100%;
+    display: flex;
+}
+
+.howworks__item:not(:last-child) {
+    margin-bottom: 68px;
+}
+
+.howworks__1line {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 106%;
+    color: #2FDBBC;
+    white-space: nowrap;
+    animation: animation-vchdbz 48s linear infinite;
+    animation-delay: -48s;
+}
+
+.howworks__1line:nth-of-type(2) {
+    animation: animation-15kjo5j 48s linear infinite;
+    animation-delay: -24s;
+}
+
+.howworks__text {
+    text-shadow: 1px 1px 0 #444444, -1px -1px 0 #444444, 1px -1px 0 #444444, -1px 1px 0 #444444, 1px 1px 0 #444444;
+    color: #181818;
+}
+
+.howworks__2line {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 106%;
+    white-space: nowrap;
+    animation: animation-vchdbz 48s linear infinite;
+    animation-delay: -48s;
+    color: #A64CED;
+    animation: animation-49plxx 40s linear infinite;
+    animation-delay: -40s;
+}
+
+.howworks__2line:nth-of-type(2) {
+    animation: animation-b6zq8t 40s linear infinite;
+    animation-delay: -20s;
+}
+
+
+.howworks__3line {
+    font-family: Outfit,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 106%;
+    color: #2FDBBC;
+    white-space: nowrap;
+    animation: animation-vchdbz 48s linear infinite;
+    -webkit-animation-delay: -48s;
+    animation-delay: -48s;
+    color: #FFAA4C;
+    animation: animation-vchdbz 50s linear infinite;
+    -webkit-animation-delay: -50s;
+    animation-delay: -50s;
+}
+
+
+.howworks__3line:nth-of-type(2) {
+    transform: translateX(-200%);
+    animation: animation-15kjo5j 50s linear infinite;
+    animation-delay: -25s;
+}
+
+@keyframes animation-15kjo5j {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes animation-vchdbz {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+}
+
+@keyframes animation-49plxx {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+@keyframes animation-b6zq8t {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+}
+
+.howworks__video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: 2;
+    width: 308px;
+    height: 623px;
+}
+
+.howworks__video .worksphone {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 308px;
+    height: 604px;
+    border-radius: 60px;
+    z-index: -1;
+}
+
+.howworks__video video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 308px;
+    height: 604px;
+    border-radius: 60px;
+    z-index: -1;
+}
+
+.statistics {
+    background-color: #954CED;
+    color: #ffffff;
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+}
+
+.statistics__container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    font-family: "Outfit";
+}
+
+.statistics__header {
+    font-weight: 700;
+    font-size: 64px;
+    padding: 50px 10px 30px 0;
+}
+
+.statistics__text {
+    font-weight: 600;
+    font-size: 24px;
+}
