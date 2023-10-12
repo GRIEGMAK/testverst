@@ -300,15 +300,15 @@ header {
     line-height: 45px;
 }
 
-.about__main .effects {
+.effects {
     white-space: nowrap;
     position: relative;
 }
 
-.about__main .effects::before {
+.effects::before {
     content: '';
     position: absolute;
-    width: 353px;
+    width: 340px;
     height: 34px;
     background-color: #A64CED;
     border-radius: 30px;
@@ -319,7 +319,7 @@ header {
     z-index: 0;
 }
 
-.about__main .effects span {
+.effects span {
     position: relative;
     z-index: 2;
 }
@@ -651,4 +651,165 @@ header {
 .statistics__text {
     font-weight: 600;
     font-size: 24px;
+}
+
+.whybudss {
+    padding: 100px 70px;
+    transition: background-color 0.5s ease 0s;
+    background-color: rgb(24, 24, 24);
+}
+
+.whybudss__h2 {
+    font-family: "Outfit";
+    font-size: 64px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 106%;
+    font-feature-settings: "liga" 0;
+    margin-bottom: 20px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: color 0.5s ease 0s;
+    color: rgb(255, 255, 255);
+}
+
+.whybudss__h3 {
+    font-family: "Outfit";
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin: 0px auto 60px;
+    max-width: 664px;
+    text-align: center;
+    transition: color 0.5s ease 0s;
+    color: rgb(255, 255, 255);
+}
+
+.whybudss__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whybudss__line {
+    display: flex;
+    justify-content: center;
+}
+
+.whybudss__line:first-of-type {
+    margin-bottom: 20px;
+}
+
+.whybudss__1item {
+    padding: 36px 40px 62px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: #F5F5F5;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    max-width: 733px;
+    margin-left: 20px;
+}
+
+.whybudss__1item .whybudss__img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 263px;
+    height: 300px;
+} 
+
+.whybudss__text {
+    position: relative;
+    max-width: 364px;
+    z-index: 2;
+}
+
+.whybudss__text h4 {
+    color: #000000;
+    font-family: "Outfit";
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.whybudss__maintext {
+    color: #000000;
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+    max-width: 334px;
+}
+
+.whybudss__2item {
+    padding: 36px 0 38px 40px;
+    width: 100%;
+    display: flex;
+    background: #F5F5F5;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    max-width: 547px;
+}
+
+.whybudss__2item .whybudss__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 172px;
+    height: 280px;
+}
+
+.whybudss__3item {
+    padding: 36px 0 62px 40px;
+    width: 100%;
+    display: flex;
+    background: #F5F5F5;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    max-width: 547px;
+}
+
+.whybudss__3item .whybudss__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 202px;
+    height: 83px;
+}
+
+.whybudss__4item {
+    padding: 36px 0 38px 40px;
+    width: 100%;
+    display: flex;
+    background: #F5F5F5;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    max-width: 733px;
+    margin-left: 20px;
+}
+
+.whybudss__4item .whybudss__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 213px;
+    height: 280px;
+}
+
+.whybudss__subtitle .effects::before {
+    width: 370px;
 }
