@@ -273,3 +273,198 @@ header {
     height: 760px;
 }
 
+.about__h2 {
+    color: #FFFFFF;
+    font-family: "Outfit";
+    font-size: 86px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 106%;
+    font-feature-settings: 'liga' off;
+    margin-bottom: 80px;
+}
+
+.about__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__main p {
+    max-width: 410px;
+    color: #FFFFFF;
+    font-family: "Outfit";
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    line-height: 45px;
+}
+
+.about__main .effects {
+    white-space: nowrap;
+    position: relative;
+}
+
+.about__main .effects::before {
+    content: '';
+    position: absolute;
+    width: 353px;
+    height: 34px;
+    background-color: #A64CED;
+    border-radius: 30px;
+    -webkit-transform: rotate(-1.69deg) translate(0, 10px);
+    -moz-transform: rotate(-1.69deg) translate(0, 10px);
+    -ms-transform: rotate(-1.69deg) translate(0, 10px);
+    transform: rotate(-1.69deg) translate(0, 10px);
+    z-index: 0;
+}
+
+.about__main .effects span {
+    position: relative;
+    z-index: 2;
+}
+
+.about__description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 728px;
+}
+
+.about__1part {
+    display: flex;
+    flex-direction: column;
+    margin-right: 139px;
+    max-width: 216px;
+}
+
+.about__1part h3 {
+    color: #FFFFFF;
+    font-family: "Outfit";
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.about__1part div {
+    color: #FFFFFF;
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+}
+
+.about__2part {
+    display: flex;
+    flex-direction: column;
+    width: 301px;
+    margin-bottom: 60px;
+}
+
+.about__2part h3 {
+    color: #FFFFFF;
+    font-family: "Outfit";
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+    max-width: 253px;
+}
+
+.about__2part div {
+    color: #FFFFFF;
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+    max-width: 236px;
+}
+
+.about__3part {
+    display: flex;
+    flex-direction: column;
+    max-width: 245px;
+    margin-right: 110px;
+}
+
+.about__3part h3 {
+    color: #FFFFFF;
+    font-family: "Outfit";
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+    max-width: 180px;
+}
+
+.about__3part div{
+    color: #FFFFFF;
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+    max-width: 245px;
+}
+
+.about__4part {
+    display: flex;
+    flex-direction: column;
+    max-width: 282px;
+}
+
+.about__4part h3 {
+    color: #FFFFFF;
+    font-family: "Outfit";
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+    max-width: 252px;
+}
+
+.about__4part div {
+    color: #FFFFFF;
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+}
+
+.about__1part img, 
+.about__2part img, 
+.about__3part img, 
+.about__4part img {
+    width: 80px;
+    height: 80px;
+}
+
+.about {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 38px 101px 110px;
+}
+
+
+.about__bg {
+    position: absolute;
+    right: 1065px;
+    bottom: 0;
+    width: 2000px;
+    height: 416px;
+    overflow: hidden;
+}
+
+.about__bg img {
+    opacity: 1;
+    width: 100%;
+}
