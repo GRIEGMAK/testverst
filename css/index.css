@@ -3,8 +3,8 @@
     font-style: normal;
     font-weight: 400;
     src: local("Outfit"),
-         url("/fonts/Outfit-SemiBold-96ab0b8ca370a784a820c2765775418d.woff2") format("woff2"),
-         url("/fonts/Outfit-SemiBold-3287e05622cb5eb779822ae1e1932d7e.woff") format("woff");
+         url("./fonts/Outfit-SemiBold-96ab0b8ca370a784a820c2765775418d.woff2") format("woff2"),
+         url("./fonts/Outfit-SemiBold-3287e05622cb5eb779822ae1e1932d7e.woff") format("woff");
   }
 
 
@@ -1031,3 +1031,74 @@ footer {
     -webkit-text-decoration: underline;
     text-decoration: underline;
 }
+
+.sticky {
+    width: 100%;
+    height: 71px;
+    background-color: rgb(24, 24, 24);
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    z-index: 100;
+}
+
+.brands__content:hover .brands__1image {
+    opacity: 1;
+    left: 0;
+    transition: 0.5;
+}
+
+.brands__content:hover .brands__2image {
+    opacity: 1;
+    bottom: 0;
+    transition: 0.5;
+}
+
+.brands__content:hover .brands__3image {
+    opacity: 1;
+    right: 0;
+    transition: 0.5;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.modal__content {
+    background-color: #ffffff;
+    color: #000000;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+}
+
+.modal__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+

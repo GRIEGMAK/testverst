@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/index.css" rel="stylesheet" />
-    <script src="/js/index.js"></script>
+    <script src="./js/index.js"></script>
     <title>Budss| Buy Together, Earn Together - Create&amp;Join Group Chats</title>
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
 </head>
@@ -35,11 +35,13 @@
                         </div>
                     </a>
                   <div class="header__contacts">
-                    <button>
+                    <form action="#modal">
+                    <button type="submit">
                       <div class="header__button">
                         <span>Contact sales</span>
                       </div>
                     </button>
+                    </form>
                   </div>
                 </div>
               </header>
@@ -52,11 +54,13 @@
                     Budss is a payments as a service and WOM engine dedicated to acquisition and retention of customers to your business.
                   </h2>
                   <div class="header__contacts">
-                    <button>
+                    <form action="#modal">
+                    <button type="submit">
                       <div class="header__button">
                         <span>Contact sales</span>
                       </div>
                     </button>
+                  </form>
                   </div>
                 </div>
                 <div class="hero__image woman">
@@ -369,11 +373,13 @@
                       </div>
                       <div class="brands__contact">
                         <div class="header__contacts">
-                            <button>
+                          <form action="#modal">
+                            <button type="submit">
                                 <div class="header__button">
                                     <span>Contact sales</span>
                                 </div>
                             </button>
+                          </form>
                         </div>
                     </div>
                     </div>
@@ -494,11 +500,11 @@
                   </div>
                   <div class="footer__downloads">
                     <div class="header__contacts cta">
-                        <button>
+                        <a href="#modal">
                           <div class="header__button">
                             <span>Contact sales</span>
                           </div>
-                        </button>
+                        </a>
                       </div>
                       <a target="_blank" href="https://apps.apple.com/us/app/budss/id1595412742">
                         <div style="max-width: 388px; display: block">
@@ -529,6 +535,15 @@
                 </div>
               </footer>  
         </main>
+        <div class="modal" id="modal">
+          <div class="modal__body">
+            <div class="modal__content">
+              <a href="modal__close" >x</a>
+              <div class="modal__title">Ха Ха</div>
+              <div class="modal__text"></div>
+            </div>
+          </div>
+        </div>
 </div>
 </body>
 </html>
