@@ -813,3 +813,134 @@ header {
 .whybudss__subtitle .effects::before {
     width: 370px;
 }
+
+.brands {
+    padding: 100px 0;
+    background-color: #F5F5F5;
+}
+
+.brands__contacts {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.brands__cta {
+    padding: 0 60px;
+}
+
+.brands__content {
+    position: relative;
+    padding: 40px 0;
+    border: 1px solid #CFCFCF;
+    border-radius: 40px;
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.brands__content h4 {
+    color: #000000;
+    font-family: "Outfit";
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 106%;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.brands__1image {
+    position: absolute;
+    transition: all 0.5s;
+    z-index: 2;
+    left: -131px;
+    bottom: 0;
+    width: 134.87px
+}
+
+.brands__2image {
+    position: absolute;
+    transition: all 0.5s;
+    z-index: 2;
+    left: 236px;
+    bottom: -76px;
+    width: 145px;
+}
+
+.brands__3image {
+    position: absolute;
+    transition: all 0.5s;
+    z-index: 2;
+    right: -148px;
+    bottom: 0;
+    width: 148px;
+}
+
+.brands__about {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.brands__text {
+    padding-left: 60px;
+    max-width: 882px;
+    margin-right: 33px;
+}
+
+.brands__text h3 {
+    color: #000000;
+    font-family: "Outfit";
+    font-size: 86px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 106%;
+    font-feature-settings: 'liga' off;
+    margin-bottom: 20px;
+}
+
+.brands__maintext {
+    max-width: 537px;
+    color: #000000;
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+}
+
+.brands__media {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0 45px 0;
+}
+
+.even {
+    padding-top: 100px;
+}
+
+.brands__network {
+    width: 90px;
+    height: 90px;
+}
+
+.brands__network:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.brands__list {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.brands__line {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
