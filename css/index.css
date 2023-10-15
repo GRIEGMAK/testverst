@@ -180,6 +180,12 @@ header {
     color: #ffffff;
     border-color: #954ced;
   }
+
+  .header__contacts button:disabled {
+      background-color: #B9B9B9;
+      border-color: #B9B9B9;
+  }
+
   .header__contacts button:not(:disabled, :active):hover:before {
     width: 100%;
     height: 100%;
@@ -1028,7 +1034,6 @@ footer {
     font-weight: 300;
     font-style: normal;
     line-height: 140%;
-    -webkit-text-decoration: underline;
     text-decoration: underline;
 }
 
@@ -1069,9 +1074,10 @@ footer {
     left: 0;
     opacity: 0;
     visibility: hidden;
+    z-index: 15;
 }
 
-.modal:target {
+.is_visible {
     opacity: 1;
     visibility: visible;
 }
@@ -1082,23 +1088,178 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
+    z-index: 17;
 }
 
 .modal__content {
-    background-color: #ffffff;
-    color: #000000;
-    max-width: 800px;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    color: inherit;
+    box-shadow: rgb(0 0 0 / 12%) 0px 16px 24px;
+    border-radius: 16px;
+    opacity: 1;
+    background: rgb(255, 255, 255);
+    max-width: 417px;
+    padding: 40px;
     position: relative;
+    z-index: 17;
 }
 
 .modal__close {
+    cursor: pointer;
     position: absolute;
     right: 10px;
     top: 10px;
     font-size: 20px;
     color: #000000;
     text-decoration: none;
+    z-index: 17;
 }
 
+.modal__text {
+    z-index: 17;
+}
 
+.modal__inputs {
+    margin-bottom: 20px;
+}
+
+.modal__input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.modal__select {
+    position: relative;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.modal__rules a {
+    color: rgb(149, 76, 237);
+    font-family: Outfit, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 140%;
+    text-decoration: underline;
+}
+
+.modal__label {
+    font-family: "Outfit";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 157%;
+    margin-bottom: 4px;
+    word-break: break-word;
+    color: rgb(0, 0, 0);
+}
+
+.modal__label span {
+    color: rgb(255, 108, 45);
+    margin-left: 2px;
+}
+
+.modal__field {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.modal__field input {
+    font-family: "Outfit";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 157%;
+    padding: 10px 16px;
+    flex: 1 1 0%;
+    width: 100%;
+    border-radius: 14px;
+    color: #A7A7A7;
+    border: 1px solid #F1F1F1;
+}
+
+.modal__field input:focus {
+    /*border: 1px solid #A7A7A7;*/
+    border-color: inherit;
+}
+
+.modal__select {
+    position: relative;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.modal__phone {
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    left: 12px;
+    top: 37px;
+    z-index: 20;
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+}
+
+.modal__input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1;
+    min-width: 0;
+}
+
+.modal__phone select {
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.modal__phoneicon {
+    height: 16px;
+    width: 22px;
+}
+
+.modal__select .modal__field input {
+    padding-left: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+.stopedScroll {
+    overflow: hidden;
+}
+
+.error__input {
+    border-color: red !important;
+}
+
+.error__text {
+    color: red;
+    font-family: "Outfit";
+    font-size: 12px;
+    margin-left: 5px
+}
