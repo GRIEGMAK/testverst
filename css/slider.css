@@ -1,3 +1,28 @@
 body {
     max-width: 1200px;
 }
+
+.slider__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.slider__container div {
+    margin: 10px 10px 10px 10px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    height: 125px;
+}
+
+.slider__prev {
+    padding-top: 3rem;
+    cursor: pointer;
+}
+
+.slider__next {
+    padding-top: 3rem;
+    cursor: pointer;
+}
