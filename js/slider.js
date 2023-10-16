@@ -62,6 +62,18 @@ window.addEventListener('load', function ()  {
         } else {
             count = count + 1
         }
-        slideForm(count)
+        let slideShow = document.querySelector(".slider__container")
+        setTimeout(function() {
+            slideShow.style.marginLeft = '-760px'
+        }, 200)
+        setTimeout(function () {
+            slideShow.style.transitionDuration = "0s";
+            slideForm(count)
+            slideShow.style.marginLeft = '-380px'
+        }, 1000)
+        setTimeout(function () {
+            slideShow.style.transitionDuration = "1s";
+        }, 1100)
+
     }
 })
