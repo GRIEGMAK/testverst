@@ -5,6 +5,8 @@ body {
 .slider__container {
     display: flex;
     flex-direction: row;
+    width: 1110px;
+    margin-left: -380px;
 }
 
 .slider__container div {
@@ -15,6 +17,11 @@ body {
     display: flex;
     flex-direction: row;
     height: 125px;
+}
+
+.slider__wrapper {
+    width: 350px;
+    overflow: hidden;
 }
 
 .slider__prev {
