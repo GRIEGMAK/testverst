@@ -34,3 +34,30 @@ body {
     padding-top: 3rem;
     cursor: pointer;
 }
+
+.slider__toggle {
+    margin-top: 3px;
+    margin-left: 3rem;
+}
+
+.slider__dots {
+    display: flex;
+    flex-direction: row;
+}
+
+.slider__dotcontent {
+    background-color: gray;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.slider__dot {
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+}
+
+.slider__dot.active_slide .slider__dotcontent,
+.slider__dot:hover .slider__dotcontent {
+    background-color: #000000;
+}
